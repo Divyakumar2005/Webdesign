@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+body{
+background-color:yellow;
+}
+h1{
+font family:times new roman;
+font-style:italic;
+fontsize:20px;
+}
+fieldset{
+color:blue;
+}
+legend{
+text-align:center;
+font-family:calibri;
+font-size:25px;
+}
+</style>
+</head>
+<body>
+        <form action="/form1.html">
+		<fieldset>
+		<legend>personal info</legend>
+		<p>action attribute to send the information another file</p>
+		<h1>personal information</h1>
+            <label for="name">firstname:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="name">lastname:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <h2>gender</h2>
+            <input type="radio" id="gender" name="gender">
+            <label>male</label><br>
+            <input type="radio" id="gender" name="gender"> 
+			<label>female</label><br>
+            <input type="radio" id="gender" name="gender"> 
+			<label>transgender</label><br>
+			<label for="category">category</label>
+			<select id="categroy" name="category">
+			<option value="category">10th student</option>
+			<option value="category">12 student</option>
+			<option value="category">ug student</option>
+			<optgroup label="ug student">
+			
+			<option value="cse">cse</option>
+			<option value="cse">b.sc data science</option>
+			<option value="cs">cs</option>
+			</optgroup>
+			<option value="category">pg student</option>
+			
+			</select><br>
+			
+			<label> known courses:(any two)</label><br>
+			<input type="checkbox" id="courses" name="courses">
+			<label>C language</label><br>
+			<input type="checkbox" id="courses" name="courses">
+						<label>C++ language</label><br>
+						<input type="checkbox" id="courses" name="courses">
+									<label>java language</label><br>
+									<input type="checkbox" id="courses" name="courses">
+												<label>python</label><br>
+												<h2>extra skills(must known any one skill):</h2>
+												<input type="button" id="name" name="name" value="frontend"><br>
+												<input type="button" id="name" name="name" value="backend"><br>
+												<input type="button" id="name" name="name" value="mern developer"><br>
+												<input type="button" id="name" name="name" value="mysql"><br>
+												<p>why give the chance for you?</p>
+												<textarea type="message" rows="10" cols="50"></textarea><br><br>
+												<br>
+												<button type="submit" onclick="alert('submitted')">submit</button>
+											    
+												
+												</fieldset>
+												
+										
+			
+</form>
+</body>
+</html>
